@@ -1,0 +1,97 @@
+body {
+	height: 3400vh;
+	background: #9fa77a; /* fallback for old browsers */
+	background: linear-gradient (
+		to right,
+		#9b0707cc,
+		#9fa77a
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right,#9b0707cc, #9fa77a); 
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	flex-direction: column;  
+
+  }
+
+
+  p {
+    text-align: center;
+    
+  }
+
+  .jacket-btn {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-image: url("/lab-express-basic-site/public/img/jacket.png");
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    background-position: center;
+  }
+  
+  .jacket-btn:hover {
+    animation-name: spin;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .line-btn {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-image: url("/lab-express-basic-site/public/img/Queeeee9.png");
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+  }
+
+  .line-btn:hover {
+    animation-name: spin;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+
+  .relative {
+    position: relative;
+    border-color: #3B3BFF;
+    left: 10px;
+    top: 10px;
+  }
+
+
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #9fa77a5b;
+    opacity: 0.3;
+    color: #111111b0;
+    border: 3px solid #ebf20bc4;
+    font-weight: bold;
+    padding: 10px;
+    width: 500px;
+  }

@@ -1,0 +1,60 @@
+body {
+	height: 100vh;
+	background: #0d95ad; 
+	background: linear-gradient (
+		to center,
+		#60c5d2cc,
+		#0d95ad
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right,#60c5d2cc, #0d95ad); 
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	flex-direction: column;
+
+  }
+
+  aside {
+    
+    float: left;
+    width: 20%; 
+    margin-right: 10%; 
+    margin-left: 4%;
+    line-height: 2;
+    
+  }
+  
+  aside span.underline {
+    text-decoration: underline wavy;
+    text-decoration-color: orange;
+  }
+
+  article {
+    float: center; 
+    width: 75%; 
+    font-size: 18px;
+  }
+  
+  div:after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+
+  .main-paragraph {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  
+  .main-paragraph:first-of-type {
+    border-top: none;
+  }
+  
+  .main-paragraph:last-of-type {
+    border-bottom: none;
+  }
+  
+  
+  
